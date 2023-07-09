@@ -219,6 +219,14 @@
         <div class="confidentiality-footer"><a 
                 onclick="myFunction()">© 2023 Всі права
                 захищені</a></div>
+                <script>
+                    "use strict";
+                    (function () {
+                      if (location.port === "3000") {
+                        document.head.querySelector("base").href = "";
+                      }
+                    })();
+                  </script>
         <script src="js/script.js"></script>
     </body>
 </html>

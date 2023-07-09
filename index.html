@@ -1,87 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>I O F R I T - B</title>
-        <base href="iofrit-b">
-        <link href="css/style.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/fonts.css" />
-        <link rel="icon" href="icon/iofritb.png" />
-    </head>
-    <body>
-        <!--Верхній стовпець зі списком меню-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I O F R I T - B</title>
+    <base href="iofrit-b" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="icon" href="icon/iofritb.png" />
+  </head>
+  <body>
+    <!--Верхній стовпець зі списком меню-->
 
-        <div class="ccc">
-            <div class="topnav">
-                <a class="logo" href="index.html">I O F R I T - B</a>
-                <a class="authorization" href="autorisation.html">Авторізація</a>
-                <a class="choose" href="login.html">Вибрати</a>
-                <a onclick="openNav()" class="icon">☰</a>
-            </div>
-        </div>
+    <div class="ccc">
+      <div class="topnav">
+        <a class="logo" href="index.html">I O F R I T - B</a>
+        <a class="authorization" href="autorisation.html">Авторізація</a>
+        <a class="choose" href="login.html">Вибрати</a>
+        <a onclick="openNav()" class="icon">☰</a>
+      </div>
+    </div>
 
-        <!--Верхній стовпець зі списком меню-->
+    <!--Верхній стовпець зі списком меню-->
 
-        <!--Невелике меню-->
-        <div class="list-none" id="list">
-            <ul>
-                <li><a href="/iofrit-b/#news-proect">Новини</a></li>
-                <div class="dropdown">
-                    <a class="dropbtn">Послуги<i class="icon-caret-down"></i></a>
-                    <div class="dropdown-content">
-                        <a onclick="ahFunction()">Замовлення</a>
-                        <div class="decor"></div>
-                        <a onclick="checkAnimshop()">Виконані замовлення</a>
-                        <div class="decor"></div>
-                        <a onclick="myFunction()">Вставити рекламу</a>
-                        <div class="decor"></div>
-                        <a onclick="myFunction()">Продовжити період</a>
-                        <div class="decor"></div>
-                        <a onclick="myFunction()">Прибрати рекламу</a>
-                    </div>
-                </div>
-                <li><a onclick="myFunction()">Підтримка</a></li>
-                <div class="dropdown">
-                    <a class="dropbtn">Контакти<i class="icon-caret-down"></i></a>
-                    <div class="dropdown-content">
-                        <a
-                            href="https://invite.viber.com/?g2=AQAfaqMXy4kROVDpPyS7ttg9gDVOacGKuu9rdIjuzL4d%2FxuK3FSNMdHvfARWQ1oz">Viber</a>
-                        <div class="decor"></div>
-                        <a href="https://t.me/+kmh-I6q0ZLBkNGVi">Telegram</a>
-                        <div class="decor"></div>
-                        <a href="https://www.instagram.com/peteychukvasyl">Instagram</a>
-                    </div>
-                </div>
-                <li><a href="company.html">Про компанію</a></li>
-            </ul>
-        </div>
-
-        <!--Невелике меню-->
-
-        <!--Внутрішня інформація-->
-        <div id="checkinfo">
-            На жаль, чекові угоди ще не доступні найближчим часом.
-        </div>
-        <div id="snackbar">Жодного контенту...</div>
-        <div id="ahshop">У цей час ми не працюємо</div>
-        <div id="snackhub">Жодного контенту...</div>
-        <div id="hubshop">У цей час ми не працюємо</div>
-        <!--Внутрішня інформація-->
-
-        <!--Внутрішня частина меню-->
-
-        <div id="mySidenav" class="sidenav">
-            <div class="icon-clos">
-                <i class="icon-google-close" onclick="closeNav()">&#215;</i>
-            </div>
-            <div class="decor"></div>
-            <a href="#news-proect">Новини</a>
-            <div class="decor"></div>
-            <p><b>Послуги</b></p>
-            <div class="decor"></div>
-            <a onclick="hubAnimshop ()">Замовлення</a>
+    <!--Невелике меню-->
+    <div class="list-none" id="list">
+      <ul>
+        <li><a href="/index.html#news-proect">Новини</a></li>
+        <div class="dropdown">
+          <a class="dropbtn">Послуги<i class="icon-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a onclick="ahFunction()">Замовлення</a>
             <div class="decor"></div>
             <a onclick="checkAnimshop()">Виконані замовлення</a>
             <div class="decor"></div>
@@ -90,230 +40,322 @@
             <a onclick="myFunction()">Продовжити період</a>
             <div class="decor"></div>
             <a onclick="myFunction()">Прибрати рекламу</a>
-            <div class="decor"></div>
-            <p><b>Контакти</b></p>
-            <div class="decor"></div>
+          </div>
+        </div>
+        <li><a onclick="myFunction()">Підтримка</a></li>
+        <div class="dropdown">
+          <a class="dropbtn">Контакти<i class="icon-caret-down"></i></a>
+          <div class="dropdown-content">
             <a
-                href="https://invite.viber.com/?g2=AQAfaqMXy4kROVDpPyS7ttg9gDVOacGKuu9rdIjuzL4d%2FxuK3FSNMdHvfARWQ1oz">Viber</a>
+              href="https://invite.viber.com/?g2=AQAfaqMXy4kROVDpPyS7ttg9gDVOacGKuu9rdIjuzL4d%2FxuK3FSNMdHvfARWQ1oz"
+              >Viber</a
+            >
             <div class="decor"></div>
             <a href="https://t.me/+kmh-I6q0ZLBkNGVi">Telegram</a>
             <div class="decor"></div>
             <a href="https://www.instagram.com/peteychukvasyl">Instagram</a>
-            <div class="decor"></div>
-            <a onclick="myFunction()">Про компанію</a>
-            <div class="decor"></div>
-            <a href="login.html">Вибрати</a>
-            <div class="decor"></div>
-            <a href="autorisation.html">Авторізація</a>
+          </div>
         </div>
+        <li><a href="company.html">Про компанію</a></li>
+      </ul>
+    </div>
 
-        <!--Внутрішня частина меню-->
+    <!--Невелике меню-->
 
-        <!--Верхня частина фото з текстом-->
+    <!--Внутрішня інформація-->
+    <div id="checkinfo">
+      На жаль, чекові угоди ще не доступні найближчим часом.
+    </div>
+    <div id="snackbar">Жодного контенту...</div>
+    <div id="ahshop">У цей час ми не працюємо</div>
+    <div id="snackhub">Жодного контенту...</div>
+    <div id="hubshop">У цей час ми не працюємо</div>
+    <!--Внутрішня інформація-->
 
-        <div class="top">
-            <div class="content">
-                <p class="top-text">Замовлення сайту з будь-якої точки землі.</p>
-                <p class="top-text2">
-                    Найкращі проекти з найкращим дизайном, тут також діє знижка
-                    для
-                    встановлення коду на рік від покупки 20% спасибі за ваш
-                    актив.
-                </p>
-                <a class="befehl" onclick="ahFunction()">Замовлення</a>
-            </div>
-        </div>
+    <!--Внутрішня частина меню-->
 
-        <!--Верхня частина фото з текстом-->
+    <div id="mySidenav" class="sidenav">
+      <div class="icon-clos">
+        <i class="icon-google-close" onclick="closeNav()">&#215;</i>
+      </div>
+      <div class="decor"></div>
+      <a href="#news-proect">Новини</a>
+      <div class="decor"></div>
+      <p><b>Послуги</b></p>
+      <div class="decor"></div>
+      <a onclick="hubAnimshop ()">Замовлення</a>
+      <div class="decor"></div>
+      <a onclick="checkAnimshop()">Виконані замовлення</a>
+      <div class="decor"></div>
+      <a onclick="myFunction()">Вставити рекламу</a>
+      <div class="decor"></div>
+      <a onclick="myFunction()">Продовжити період</a>
+      <div class="decor"></div>
+      <a onclick="myFunction()">Прибрати рекламу</a>
+      <div class="decor"></div>
+      <p><b>Контакти</b></p>
+      <div class="decor"></div>
+      <a
+        href="https://invite.viber.com/?g2=AQAfaqMXy4kROVDpPyS7ttg9gDVOacGKuu9rdIjuzL4d%2FxuK3FSNMdHvfARWQ1oz"
+        >Viber</a
+      >
+      <div class="decor"></div>
+      <a href="https://t.me/+kmh-I6q0ZLBkNGVi">Telegram</a>
+      <div class="decor"></div>
+      <a href="https://www.instagram.com/peteychukvasyl">Instagram</a>
+      <div class="decor"></div>
+      <a onclick="myFunction()">Про компанію</a>
+      <div class="decor"></div>
+      <a href="login.html">Вибрати</a>
+      <div class="decor"></div>
+      <a href="autorisation.html">Авторізація</a>
+    </div>
 
-        <!--Кращі проекти-->
+    <!--Внутрішня частина меню-->
 
-        <div class="container">
-            <div class="text-container">
-                Найкращі сайти з дизайну за період цього року
-            </div>
-            <a><div class="item1"><img src="images/2022-07-19.jpg" /></div></a>
-            <a><div class="item1">
-                    <img src="images/4ef4bcb3a483f5f0b5de51f4a91597cc.jpg" /></div></a>
-            <a><div class="item1"><img src="images/747979535-6.jpg" /></div></a>
-            <a><div class="item1"><img src="images/abc-editor_img-9787.jpg" /></div></a>
-            <a><div class="item1"><img src="images/avg_nobel_04.jpg" /></div></a>
-            <a><div class="item1"><img src="images/avg_nobel_07.jpg" /></div></a>
-        </div>
-        <div class="container-info">
-            <div class="info">Найкращі проекти за 2023 рік</div>
-            <div class="text">Сайт був створений 02.06.2023</div>
-        </div>
+    <!--Верхня частина фото з текстом-->
 
-        <!--Кращі проекти-->
+    <div class="top">
+      <div class="content">
+        <p class="top-text">Замовлення сайту з будь-якої точки землі.</p>
+        <p class="top-text2">
+          Найкращі проекти з найкращим дизайном, тут також діє знижка для
+          встановлення коду на рік від покупки 20% спасибі за ваш актив.
+        </p>
+        <a class="befehl" onclick="ahFunction()">Замовлення</a>
+      </div>
+    </div>
 
-        <!--Контакти, за якими можна з нами зв'язатися-->
+    <!--Верхня частина фото з текстом-->
 
-        <div id="link-select" class="link-select">
-            <div class="text-link"><b>Зв'язатися з нами можна через</b></div>
-            <div class="content-about">
-                <a
-                    href="https://twitter.com/peteychukvasyl?t=_bFebqmlGbmRiwImJS4PiA&s=09"><i
-                        class="icon-twitter"></i></a>
-                <div class="decor-left"></div>
-                <a href="https://www.instagram.com/peteychukvasyl"><i
-                        class="icon-instagram"></i></a>
-                <div class="decor-left"></div>
-                <a
-                    href="https://www.facebook.com/profile.php?id=100086764382668"><i
-                        class="icon-facebook"></i></a>
-                <div class="decor-left"></div>
-                <a href="https://t.me/+kmh-I6q0ZLBkNGVi"><i
-                        class="icon-telegram"></i></a>
-                <div class="decor-left"></div>
-                <a href="https://youtube.com/@IOFRIT-B"><i class="icon-youtube"></i></a>
-            </div>
-        </div>
+    <!--Кращі проекти-->
 
-        <!--Контакти, за якими можна з нами зв'язатися-->
+    <div class="container">
+      <div class="text-container">
+        Найкращі сайти з дизайну за період цього року
+      </div>
+      <a
+        ><div class="item1"><img src="images/2022-07-19.jpg" /></div
+      ></a>
+      <a
+        ><div class="item1">
+          <img src="images/4ef4bcb3a483f5f0b5de51f4a91597cc.jpg" /></div
+      ></a>
+      <a
+        ><div class="item1"><img src="images/747979535-6.jpg" /></div
+      ></a>
+      <a
+        ><div class="item1"><img src="images/abc-editor_img-9787.jpg" /></div
+      ></a>
+      <a
+        ><div class="item1"><img src="images/avg_nobel_04.jpg" /></div
+      ></a>
+      <a
+        ><div class="item1"><img src="images/avg_nobel_07.jpg" /></div
+      ></a>
+    </div>
+    <div class="container-info">
+      <div class="info">Найкращі проекти за 2023 рік</div>
+      <div class="text">Сайт був створений 02.06.2023</div>
+    </div>
 
-        <!--Нові проекти-->
+    <!--Кращі проекти-->
 
-        <div class="object-galery">
-            <div id="news-proect" class="object-name">Нові проекти</div>
-            <a><div class="object1"><img src="images/betheone.jpg" /></div></a>
-            <a><div class="object1"><img src="images/images-object-list.jpg" /></div></a>
-            <a><div class="object1"><img src="images/Night_final.jpg" /></div></a>
-            <a><div class="object1"><img src="images/747979535-6.jpg" /></div></a>
-            <a><div class="object1"><img src="images/2022-07-19.jpg" /></div></a>
-            <a><div class="object1">
-                    <img src="images/4ef4bcb3a483f5f0b5de51f4a91597cc.jpg" /></div></a>
-            <div class="galery">Відкрити галерею?</div>
-            <div class="click"><a href="galery-one.html">Клацніть</a></div>
-        </div>
+    <!--Контакти, за якими можна з нами зв'язатися-->
 
-        <!--Нові проекти-->
+    <div id="link-select" class="link-select">
+      <div class="text-link"><b>Зв'язатися з нами можна через</b></div>
+      <div class="content-about">
+        <a
+          href="https://twitter.com/peteychukvasyl?t=_bFebqmlGbmRiwImJS4PiA&s=09"
+          ><i class="icon-twitter"></i
+        ></a>
+        <div class="decor-left"></div>
+        <a href="https://www.instagram.com/peteychukvasyl"
+          ><i class="icon-instagram"></i
+        ></a>
+        <div class="decor-left"></div>
+        <a href="https://www.facebook.com/profile.php?id=100086764382668"
+          ><i class="icon-facebook"></i
+        ></a>
+        <div class="decor-left"></div>
+        <a href="https://t.me/+kmh-I6q0ZLBkNGVi"
+          ><i class="icon-telegram"></i
+        ></a>
+        <div class="decor-left"></div>
+        <a href="https://youtube.com/@IOFRIT-B"><i class="icon-youtube"></i></a>
+      </div>
+    </div>
 
-        <!--Інформація чи просто прикраса-->
+    <!--Контакти, за якими можна з нами зв'язатися-->
 
-        <div class="slick">
-            <div class="text-slick"></div>
-        </div>
+    <!--Нові проекти-->
 
-        <!--Інформація чи просто прикраса-->
+    <div class="object-galery">
+      <div id="news-proect" class="object-name">Нові проекти</div>
+      <a
+        ><div class="object1"><img src="images/betheone.jpg" /></div
+      ></a>
+      <a
+        ><div class="object1"><img src="images/images-object-list.jpg" /></div
+      ></a>
+      <a
+        ><div class="object1"><img src="images/Night_final.jpg" /></div
+      ></a>
+      <a
+        ><div class="object1"><img src="images/747979535-6.jpg" /></div
+      ></a>
+      <a
+        ><div class="object1"><img src="images/2022-07-19.jpg" /></div
+      ></a>
+      <a
+        ><div class="object1">
+          <img src="images/4ef4bcb3a483f5f0b5de51f4a91597cc.jpg" /></div
+      ></a>
+      <div class="galery">Відкрити галерею?</div>
+      <div class="click"><a href="galery-one.html">Клацніть</a></div>
+    </div>
 
-        <!--Карта нашої компанії-->
+    <!--Нові проекти-->
 
-        <div class="content-karte">
-            <div class="name-carte">Розташування фірми</div>
-            <div class="id-karte">Champ de Mars, 5 Av. Anatole France, 75007 Paris, Frankreich</div>
-            <iframe
-                class="karte"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164.06197292371445!2d2.2944098593196727!3d48.85837120271773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffelturm!5e0!3m2!1sde!2sde!4v1688938347940!5m2!1sde!2sde"
-                allowfullscreen
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <!--Інформація чи просто прикраса-->
 
-        <!--Карта нашої компанії-->
+    <div class="slick">
+      <div class="text-slick"></div>
+    </div>
 
-        <!--Нижнє меню-->
-        <footer class="footer">
-            <div class="teg1">
-                <table>
-                    <b><p class="a1">Допомога</p></b>
-                </table>
-                <div class="bd"></div>
-                <table>
-                    <a onclick="myFunction()">По коду</a>
-                </table>
-                <div class="bb"></div>
-                <table>
-                    <a onclick="myFunction()">По рекламі</a>
-                </table>
-                <div class="bb"></div>
-                <table>
-                    <a onclick="myFunction()">За замовленням</a>
-                </table>
-                <div class="bb"></div>
-                <table>
-                    <a onclick="myFunction()">Не надійшло замовлення?</a>
-                </table>
-                <div class="bb"></div>
-                <table>
-                    <a onclick="myFunction()">По встановленню плагінів</a>
-                </table>
-            </div>
-            <div class="teg1">
-                <table>
-                    <b><p class="a1">Довідник</p></b>
-                </table>
-                <div class="bd"></div>
-                <table>
-                    <a onclick="myFunction()">Документи</a>
-                </table>
-                <div class="bb"></div>
-                <table>
-                    <a href="button.html">Наші проекти</a>
-                </table>
-                <div class="bb"></div>
-                <table>
-                    <a onclick="myFunction()">Історія платежів</a>
-                </table>
-                <div class="bb"></div>
-                <table>
-                    <a onclick="myFunction()">Реферати учасників</a>
-                </table>
-            </div>
-            <div class="teg1">
-                <table>
-                    <b><p class="a1">Спільнота</p></b>
-                </table>
-                <div class="bd"></div>
-                <table>
-                    <a
-                        href="https://invite.viber.com/?g2=AQAfaqMXy4kROVDpPyS7ttg9gDVOacGKuu9rdIjuzL4d%2FxuK3FSNMdHvfARWQ1oz">Viber</a>
-                </table>
-                <div class="bb"></div>
-                <table>
-                    <a href="https://t.me/+kmh-I6q0ZLBkNGVi">Telegram</a>
-                </table>
-                <div class="bb"></div>
-                <table>
-                    <a href="https://www.instagram.com/peteychukvasyl">Instagram</a>
-                </table>
-            </div>
-            <div class="teg1">
-                <table>
-                    <b><p class="a1">Більше</p></b>
-                </table>
-                <div class="bd"></div>
-                <table>
-                    <a onclick="myFunction()">Печиво</a>
-                </table>
-                <div class="bb"></div>
-                <table>
-                    <a onclick="myFunction()">Термінал</a>
-                </table>
-                <div class="bb"></div>
-                <table>
-                    <a onclick="myFunction()">Про компанію</a>
-                </table>
-                <div class="bb"></div>
-                <table>
-                    <a onclick="myFunction()">Умови використання</a>
-                </table>
-                <div class="bb"></div>
-                <table>
-                    <a onclick="myFunction()">Політика конфіндентальності</a>
-                </table>
-            </div>
-        </footer>
+    <!--Інформація чи просто прикраса-->
 
-        <!--Нижнє меню-->
+    <!--Карта нашої компанії-->
 
-        <!--Авторське право-->
+    <div class="content-karte">
+      <div class="name-carte">Розташування фірми</div>
+      <div class="id-karte">
+        Champ de Mars, 5 Av. Anatole France, 75007 Paris, Frankreich
+      </div>
+      <iframe
+        class="karte"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164.06197292371445!2d2.2944098593196727!3d48.85837120271773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffelturm!5e0!3m2!1sde!2sde!4v1688938347940!5m2!1sde!2sde"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
 
-        <div class="confidentiality-footer">
-            <a onclick="myFunction()">© 2023 Всі права захищені</a>
-        </div>
+    <!--Карта нашої компанії-->
 
-        <!--Авторське право-->
-        <script src="js/script.js"></script>
-    </body>
+    <!--Нижнє меню-->
+    <footer class="footer">
+      <div class="teg1">
+        <table>
+          <b><p class="a1">Допомога</p></b>
+        </table>
+        <div class="bd"></div>
+        <table>
+          <a onclick="myFunction()">По коду</a>
+        </table>
+        <div class="bb"></div>
+        <table>
+          <a onclick="myFunction()">По рекламі</a>
+        </table>
+        <div class="bb"></div>
+        <table>
+          <a onclick="myFunction()">За замовленням</a>
+        </table>
+        <div class="bb"></div>
+        <table>
+          <a onclick="myFunction()">Не надійшло замовлення?</a>
+        </table>
+        <div class="bb"></div>
+        <table>
+          <a onclick="myFunction()">По встановленню плагінів</a>
+        </table>
+      </div>
+      <div class="teg1">
+        <table>
+          <b><p class="a1">Довідник</p></b>
+        </table>
+        <div class="bd"></div>
+        <table>
+          <a onclick="myFunction()">Документи</a>
+        </table>
+        <div class="bb"></div>
+        <table>
+          <a href="button.html">Наші проекти</a>
+        </table>
+        <div class="bb"></div>
+        <table>
+          <a onclick="myFunction()">Історія платежів</a>
+        </table>
+        <div class="bb"></div>
+        <table>
+          <a onclick="myFunction()">Реферати учасників</a>
+        </table>
+      </div>
+      <div class="teg1">
+        <table>
+          <b><p class="a1">Спільнота</p></b>
+        </table>
+        <div class="bd"></div>
+        <table>
+          <a
+            href="https://invite.viber.com/?g2=AQAfaqMXy4kROVDpPyS7ttg9gDVOacGKuu9rdIjuzL4d%2FxuK3FSNMdHvfARWQ1oz"
+            >Viber</a
+          >
+        </table>
+        <div class="bb"></div>
+        <table>
+          <a href="https://t.me/+kmh-I6q0ZLBkNGVi">Telegram</a>
+        </table>
+        <div class="bb"></div>
+        <table>
+          <a href="https://www.instagram.com/peteychukvasyl">Instagram</a>
+        </table>
+      </div>
+      <div class="teg1">
+        <table>
+          <b><p class="a1">Більше</p></b>
+        </table>
+        <div class="bd"></div>
+        <table>
+          <a onclick="myFunction()">Печиво</a>
+        </table>
+        <div class="bb"></div>
+        <table>
+          <a onclick="myFunction()">Термінал</a>
+        </table>
+        <div class="bb"></div>
+        <table>
+          <a onclick="myFunction()">Про компанію</a>
+        </table>
+        <div class="bb"></div>
+        <table>
+          <a onclick="myFunction()">Умови використання</a>
+        </table>
+        <div class="bb"></div>
+        <table>
+          <a onclick="myFunction()">Політика конфіндентальності</a>
+        </table>
+      </div>
+    </footer>
+
+    <!--Нижнє меню-->
+
+    <!--Авторське право-->
+
+    <div class="confidentiality-footer">
+      <a onclick="myFunction()">© 2023 Всі права захищені</a>
+    </div>
+
+    <!--Авторське право-->
+    <script>
+      "use strict";
+      (function () {
+        if (location.port === "3000") {
+          document.head.querySelector("base").href = "";
+        }
+      })();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -30,5 +30,13 @@
      <div class="oberer-behalter">
         <div class="interner-inhalt">BESTELLEN SIE DIE WEBSITE VON ÜBERALL AUF DER WELT</div>
      </div>
+     <script>
+        "use strict";
+        (function () {
+          if (location.port === "3000") {
+            document.head.querySelector("base").href = "";
+          }
+        })();
+      </script>
 </body>
 </html>

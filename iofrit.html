@@ -41,5 +41,13 @@
             </div>
         </div>
     <!--Фото текст і кнопки-->
+    <script>
+        "use strict";
+        (function () {
+          if (location.port === "3000") {
+            document.head.querySelector("base").href = "";
+          }
+        })();
+      </script>
     </body>
 </html>

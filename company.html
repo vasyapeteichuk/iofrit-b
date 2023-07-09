@@ -55,7 +55,14 @@
             <div class="text-about">Вітаємо вас на нашому проекті!</div>
            <div class="text-dd"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, neque sit nam incidunt aut omnis, reiciendis id rerum ratione repellendus enim? Reprehenderit voluptate numquam sunt mollitia repudiandae labore voluptatum rerum!</p></div>
         </div>
-
+        <script>
+            "use strict";
+            (function () {
+              if (location.port === "3000") {
+                document.head.querySelector("base").href = "";
+              }
+            })();
+          </script>
         <script src="js/script.js"></script>
     </body>
     

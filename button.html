@@ -148,6 +148,14 @@
             </div>
         </footer>
          <!--Внутрішні властивості-->
+         <script>
+            "use strict";
+            (function () {
+              if (location.port === "3000") {
+                document.head.querySelector("base").href = "";
+              }
+            })();
+          </script>
          <script src="js/script.js"></script>
     </body>
 </html>
