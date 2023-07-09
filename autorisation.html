@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>I O F R I T - B</title>
+        <base href="iofrit-b">
+        <link href="css/ah.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="icon" href="icon/iofritb.png">
+    </head>
+    <body>
+        <div class="ccc">
+            <div class="topnav">
+                <a class="logo" href="index.html"><b>I O F R I T - B</b></a>
+                <a class="authorization">Авторізація</a>
+                <a class="choose" href="login.html">Вибрати</a>
+                <a onclick="openNav()" class="icon">☰</a>
+            </div>
+        </div>
+        <div class="list-none" id="list">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <div class="dropdown">
+                    <a class="dropbtn">Послуги<i class="icon-caret-down"></i></a>
+                    <div class="dropdown-content">
+                      <a href="#" onclick="ahFunction()">Замовлення</a>
+                      <div class="decor"></div>
+                      <a href="#">Виконані замовлення</a>
+                      <div class="decor"></div>
+                      <a href="#">Вставити рекламу</a>
+                      <div class="decor"></div>
+                      <a href="#">Продовжити рекламу</a>
+                      <div class="decor"></div>
+                      <a href="#">Прибрати рекламу</a>
+                    </div>
+                  </div>
+                <li><a onclick="myFunction()">Підтримка</a></li>
+                <div class="dropdown">
+                    <a class="dropbtn">Контакти<i class="icon-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a
+                        href="https://invite.viber.com/?g2=AQAfaqMXy4kROVDpPyS7ttg9gDVOacGKuu9rdIjuzL4d%2FxuK3FSNMdHvfARWQ1oz">Viber</a>
+                      <div class="decor"></div>
+                      <a href="https://t.me/+kmh-I6q0ZLBkNGVi">Telegram</a>
+                      <div class="decor"></div>
+                      <a href="https://www.instagram.com/peteychukvasyl">Instagram</a>
+                    </div>
+                  </div>
+                <li><a href="company.html">Про компанію</a></li>
+            </ul>
+        </div>
+        <div id="snackbar">Жодного контенту...</div>
+        <div id="ahshop">У цей час ми не працюємо</div>
+        <div id="snackhub">Жодного контенту...</div>
+        <div id="hubshop">У цей час ми не працюємо</div>
+        <div id="mySidenav" class="sidenav">
+            <div class="icon-clos">
+            <i class="icon-google-close"
+                onclick="closeNav()">&#215;</i>
+            </div>
+                <div class="decor"></div>
+            <a href="index.html">Головна</a>
+            <div class="decor"></div>
+            <p><b>Послуги</b></p>
+            <div class="decor"></div>
+            <a onclick="hubAnimshop ()">Замовлення</a>
+            <div class="decor"></div>
+            <a href="#">Виконані замовлення</a>
+            <div class="decor"></div>
+            <a href="#">Вставити рекламу</a>
+            <div class="decor"></div>
+            <a href="#">Продовжити рекламу</a>
+            <div class="decor"></div>
+            <a href="#">Прибрати рекламу</a>
+            <div class="decor"></div>
+            <p><b>Контакти</b></p>
+            <div class="decor"></div>
+            <a
+                href="https://invite.viber.com/?g2=AQAfaqMXy4kROVDpPyS7ttg9gDVOacGKuu9rdIjuzL4d%2FxuK3FSNMdHvfARWQ1oz">Viber</a>
+                <div class="decor"></div>
+            <a href="https://t.me/+kmh-I6q0ZLBkNGVi">Telegram</a>
+            <div class="decor"></div>
+            <a href="https://www.instagram.com/peteychukvasyl">Instagram</a>
+            <div class="decor"></div>
+            <a href="#">Про компанію</a>
+            <div class="decor"></div>
+            <a href="login.html">Вибрати</a>
+            <div class="decor"></div>
+            <a>Авторізація</a>
+        </div>
+        <!--Внутрішні властивості-->
+        
+
+        <div id="mySidenav" class="sidenav">
+            <i class="icon-close-e"
+                onclick="closeNav()">&#215;</i>
+            <a href="index.html">Головна</a>
+            <p><b>Послуги</b></p>
+            <a href="#">Вставити код</a>
+            <a href="#">Вставити рекламу</a>
+            <a href="#">Прибрати код</a>
+            <a href="#">Прибрати рекламу</a>
+            <a href="#">Підтримка</a>
+            <p><b>Контакти</b></p>
+            <a
+                href="https://invite.viber.com/?g2=AQAfaqMXy4kROVDpPyS7ttg9gDVOacGKuu9rdIjuzL4d%2FxuK3FSNMdHvfARWQ1oz">Viber</a>
+            <a href="https://t.me/+kmh-I6q0ZLBkNGVi">Telegram</a>
+            <a href="https://www.instagram.com/peteychukvasyl">Instagram</a>
+            <a href="#">Про компанію</a>
+            <a href="login.html">Вибрати</a>
+            <a>Авторізація</a>
+        </div>
+        <div id="snackbar">Жодного контенту...</div>
+         <!--Внутрішні властивості-->
+        <div class="text-container">Зареєструватися</div>
+        <div class="container">
+            <form action="">
+                <label for="usrname">Ім'я користувача</label>
+                <input type="text" id="usrname" name="usrname" placeholder="Введіть Ім'я" required>
+                 <label for="usrname">Електронна пошта</label>
+                <input type="email" id="email" name="email" placeholder="Введіть Адресу" required>
+                <label for="psw">Пароль</label>
+                <input type="password" id="psw" name="psw"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Введіть Пароль" required>
+                    <label for="psw">Повторіть пароль</label>
+                    <input type="password" id="psw" name="psw"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Повторіть Пароль" required>
+                <input type="submit" value="Надіслати">
+            </form>
+        </div>
+        <div id="message">
+            <div class="text-message">Пароль повинен містити наступне:</div>
+           
+            <p id="letter" class="invalid">Мала літера</p>
+            <p id="capital" class="invalid">Велика буква</p>
+            <p id="number" class="invalid">Номер</p>
+            <p id="length" class="invalid">Не менше 8 символів</p>
+        </div>
+        <div class="content-info"><div class="text-info">
+            <a href=""><i class="icon-google"></i></a>
+            <div class="decor-left"></div>
+            <a href=""><i class="icon-facebook"></i></a>
+            <div class="decor-left"></div>
+        </a><a href=""><i class="icon-twitter"></i></a>
+        <div class="decor-left"></div>
+        </a><a href=""><i class="icon-apple"></i></a>
+        
+        </div></div>
+        <footer class="footer">
+            <div class="teg1">
+                <table><b><p class="a1">Допомога</p></b></table>
+                <div class="bd"></div>
+                <table><a href="#" onclick="myFunction()">По коду</a></table>
+                <div class="bb"></div>
+                <table><a href="#" onclick="myFunction()">По рекламі</a></table>
+                <div class="bb"></div>
+                <table><a href="#" onclick="myFunction()">За замовленням</a></table>
+                <div class="bb"></div>
+                <table><a href="#" onclick="myFunction()">Не надійшло замовлення?</a></table>
+                <div class="bb"></div>
+                <table><a href="#" onclick="myFunction()">По встановленню плагінів</a></table>
+                
+            </div>
+            <div class="teg1">
+                <table><b><p class="a1">Довідник</p></b></table>
+                <div class="bd"></div>
+                <table><a href="#" onclick="myFunction()">Документи</a></table>
+                <div class="bb"></div>
+                <table><a href="#" onclick="myFunction()">Наші проекти</a></table>
+                <div class="bb"></div>
+                <table><a href="#" onclick="myFunction()">Історія платежів</a></table>
+                <div class="bb"></div>
+                <table><a href="#" onclick="myFunction()">Реферати учасників</a></table>
+            </div>
+            <div class="teg1">
+                <table><b><p class="a1">Спільнота</p></b></table>
+                <div class="bd"></div>
+                <table><a
+                        href="https://invite.viber.com/?g2=AQAfaqMXy4kROVDpPyS7ttg9gDVOacGKuu9rdIjuzL4d%2FxuK3FSNMdHvfARWQ1oz">Viber</a></table>
+                <div class="bb"></div>
+                <table><a href="https://t.me/+kmh-I6q0ZLBkNGVi">Telegram</a></table>
+                <div class="bb"></div>
+                <table><a href="https://www.instagram.com/peteychukvasyl">Instagram</a></table>
+            </div>
+            <div class="teg1">
+                <table><b><p class="a1">Більше</p></b></table>
+                <div class="bd"></div>
+                <table><a href="#" onclick="myFunction()">Печиво</a></table>
+                <div class="bb"></div>
+                <table><a href="#" onclick="myFunction()">Термінал</a></table>
+                <div class="bb"></div>
+                <table><a href="#" onclick="myFunction()">Про компанію</a></table>
+                <div class="bb"></div>
+                <table><a href="#" onclick="myFunction()">Умови використання</a></table>
+                <div class="bb"></div>
+                <table><a href="#" onclick="myFunction()">Політика
+                        конфіндентальності</a></table>
+            </div>
+        </footer>
+        <div class="confidentiality-footer"><a href="#"
+                onclick="myFunction()">© 2023 Всі права
+                захищені</a></div>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>

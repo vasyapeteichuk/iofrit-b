@@ -1,0 +1,72 @@
+/*Основні атрибути*/
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    user-select: none;
+}
+*{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+    color: #000;
+}
+::-webkit-scrollbar {
+    width: 16px;
+}
+::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+}
+::-webkit-scrollbar-track {
+    background-color: #f9f9f9;
+}
+/*Основні атрибути*/
+
+/*Меню логотип і гамбургер меню*/
+.logotype{
+    float: left;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    padding-left: 30px;
+    background-color: red;
+}
+.list-menu{
+    float: right;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    padding-right: 30px;
+    background-color: red;
+}
+.list-menu ul li{
+    display: inline-block;
+}
+.topnav .hub {
+    display: none;
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    padding-right: 30px;
+    background-color: red;
+}
+@media screen and (max-width: 700px) {
+    .topnav :not(:first-child) {display: none;}
+    .topnav .hub{
+        display: block;
+    }
+  }
+/*Меню логотип і гамбургер меню*/
+
+.oberer-behalter{
+    background-color: #f9f9f9;
+    width: 100%;
+    min-height: 969px;
+    display: inline-block;
+}
+.interner-inhalt{
+    background-color: aqua;
+    max-width: 1200px;
+}
